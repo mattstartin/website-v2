@@ -1,0 +1,25 @@
+.fullheight { height: 100vh }
+/* .nav {background-color: red;} */
+.contents {
+    background: linear-gradient(to top, #dbf7ccba, #d399f9cc), url('../images/mattstartin_small.jpeg') no-repeat top center;
+    background-size: cover;
+}
+
+.details { height: 25%; background-color: grey;}
+.detailsContents { text-align: right; padding-top:25%; padding-right:5%}
+
+.navigation { height: 75%; }
+.navButton { width: 100%; padding:5%;}
+.navLink { text-decoration: none;}
+
+.landingContents { margin: 25% 5%; }
+
+
+.sidenav {
+    background: lightgray;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    overflow-x: hidden; /* Disable horizontal scroll */    
+  }
