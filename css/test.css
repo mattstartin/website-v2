@@ -1,16 +1,24 @@
 .fullheight { height: 100vh }
 /* .nav {background-color: red;} */
-.contents {
-    background: linear-gradient(to top, #dbf7ccba, #d399f9cc), url('../images/mattstartin_small.jpeg') no-repeat top center;
+.bgImage {
+    background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
+}
+.contents {
+    background-image: linear-gradient(#dbf7ccba, #d399f9cc), url('../images/mattstartin_small.jpeg');
+}
+.about {
+    background-image: linear-gradient(#d399f9cc, #f36f8bcc), url('../images/slipway.jpeg');
 }
 
 .details { height: 25%; background-color: grey;}
 .detailsContents { text-align: right; padding-top:25%; padding-right:5%}
 
 .navigation { height: 75%; }
-.navButton { width: 100%; padding:5%;}
-.navLink { text-decoration: none;}
+.navButton { width: 90%; padding:5%; vertical-align: middle;}
+.navButton:hover { background-color: red;}
+.navLink { text-decoration: none; vertical-align: middle; color: black}
 
 .landingContents { margin: 25% 5%; }
 
@@ -23,3 +31,9 @@
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */    
   }
+
+
+/* icons */
+.icon {    width: 20px;    height: 20px;; vertical-align: middle;  }
+.icon-green { filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); }
+.icon-blue { filter: invert(52%) sepia(35%) saturate(5315%) hue-rotate(161deg) brightness(95%) contrast(101%); }
