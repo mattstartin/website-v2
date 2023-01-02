@@ -13,7 +13,7 @@
 }
 
 .details { height: 25%; background-color: grey;}
-.detailsContents { text-align: right; padding-top:25%; padding-right:5%}
+.detailsContents { text-align: right; padding-right:5%}
 
 .navigation { height: 75%; }
 .navButton { width: 90%; padding:5%; vertical-align: middle;}
