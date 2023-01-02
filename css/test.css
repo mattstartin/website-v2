@@ -17,7 +17,6 @@
 
 .navigation { height: 75%; }
 .navButton { width: 90%; padding:5%; vertical-align: middle;}
-.navButton:hover { background-color: red;}
 .navLink { text-decoration: none; vertical-align: middle; color: black}
 
 .landingContents { margin: 25% 5%; }
