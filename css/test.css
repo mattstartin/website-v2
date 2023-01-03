@@ -1,3 +1,4 @@
+
 .fullheight { height: 100vh }
 /* .nav {background-color: red;} */
 .bgImage {
@@ -12,27 +13,41 @@
     background-image: linear-gradient(#d399f9cc, #f36f8bcc), url('../images/slipway.jpeg');
 }
 
-.details { height: 25%; background-color: grey;}
+.details { height: 10vh;}
 .detailsContents { text-align: right; padding-right:5%}
 
-.navigation { height: 75%; }
-.navButton { width: 90%; padding:5%; vertical-align: middle;}
+.navigation { height: 90vh; margin-top: 50vh;}
+.navButton { width: 90%; padding:5%; vertical-align: middle; text-align: center; font-size: 2em;}
 .navLink { text-decoration: none; vertical-align: middle; color: black}
 
 .landingContents { margin: 25% 5%; }
 
 
 .sidenav {
-    background: lightgray;
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 1; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     overflow-x: hidden; /* Disable horizontal scroll */    
-  }
+}
+
+.navbar {
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 99; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;  
+}
+
+
 
 
 /* icons */
 .icon {    width: 20px;    height: 20px;; vertical-align: middle;  }
-.icon-green { filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%); }
-.icon-blue { filter: invert(52%) sepia(35%) saturate(5315%) hue-rotate(161deg) brightness(95%) contrast(101%); }
+
+body { background-color: #0b4967;}
+.containerContents { min-height:50vh; margin-top:15vh;}
+.introText { color: #66FFF3; font-size: 16px;}
+.heroText { color: #FF6673; font-size: 80px; font-weight: bold;}
+.heroSubText { color: #AC91B1; font-size: 80px; font-family: bold;}
+.standardText { color: #95739C; font-size: 16px;}
+.navItem { display: inline; margin-left:16px; margin-top:4px}
