@@ -6,7 +6,6 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link href="http://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/test.css">
@@ -14,126 +13,60 @@
 <script type="text/javascript" src="./js/textrotate.js"></script>
 
 <body>
+
     <div class="container">
         <div class="row">
-
-
-
           <!--Left Column: Nav -->
-          <div class="one columns sidenav fullheight">
+          <div class="three columns sidenav fullheight">
             <div class="details">
                 <div class="detailsContents">
-                    <h4>M<b>S</b></h4>
+                    <h4>Matt<b>Startin</b></h4>
+                    <div>Tech Lead</div>
                 </div>
             </div>
             <div class="navigation">
                 <div class="navButton">
-                    <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                    <img class="icon icon-green" src="images/icons/user-regular.svg"/>
+                    <a href="#about" class="navLink">About</a>
                 </div>
                 <div class="navButton">
-                    <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                    <img class="icon icon-blue" src="images/icons/folder-regular.svg"/>
+                    <a href="#portfolio" class="navLink">Portfolio</a>
                 </div>
-                <div class="navButton">
-                    <i class="fa fa-github-square" aria-hidden="true"></i>
-                </div>
+                <div class="navButton"><a href="#skills" class="navLink">Skills</a></div>
+                <div class="navButton"><a href="#contact" class="navLink">Contact</a></div>
+            </div>
+          </div>
+          <!--Right Column: Contents -->
+          <div class="nine columns offset-by-three bgImage contents fullheight">
+              <div class="landingContents">
+                  <h1>Matt<b>Startin</b></h1>
+                  <span
+                  class="txt-rotate"
+                  data-period="50"
+                  data-rotate='[ "Tech Lead", "Software Engineer.", "Runner", "Nerd", "Ex-Goalkeeper" ]'></span> 
+              </div>
+          </div>
+
+          <div class="nine columns offset-by-three bgImage about fullheight">
+            <div class="" id="about">
+                <h1>About</b></h1>
             </div>
           </div>
 
-          <!-- Top Nav -->
-          <div class="eleven columns offset-by-one">
-                
-            <div class="container">
-                <div class="row">
-                    <div class="ten columns">
-                        <div class="navItem">About</div>
-                        <div class="navItem">Experience</div>
-                        <div class="navItem">Portfolio</div>
-                        <div class="navItem">Contact</div>
-                    </div>
-                </div>
+          <div class="nine columns offset-by-three contents fullheight">
+            <div class="" id="about">
+                <h1>Portfolio</b></h1>
             </div>
-        </div>
+          </div>
 
-            <!-- Landing Page -->
-            <div class="eleven columns offset-by-one fullheight">
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="ten columns containerContents">
-                            <div class="introText">Hi, my name is</div>
-                            <div class="heroText">Matt Startin.</div>
-                            <div class="heroSubText">I do code</div>
-                            <div class="standardText">I'm a software engineer etc</div>
-                        </div>
-                    </div>
-                </div>
+          <div class="nine columns offset-by-three contents fullheight">
+            <div class="" id="about">
+                <h1>Skills</b></h1>
             </div>
-
-            <!-- About -->
-            <div class="eleven columns offset-by-one fullheight">
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="six columns">
-                            <div class="introText">01. About Me</div>
-                            <div class="standardText">Hello. I've done some things</div>
-                        </div>
-                        <div class="six columns">
-                            <div class="introText">Picture</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Experience -->
-            <div class="eleven columns offset-by-one fullheight">
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="six columns">
-                            <div class="introText">02. Experience</div>
-                            <div class="standardText">Hello. I've done some things</div>
-                        </div>
-                        <div class="six columns">
-                            <div class="introText">Picture</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Portfolio -->
-            <div class="eleven columns offset-by-one fullheight">
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="six columns">
-                            <div class="introText">03. Portfolio</div>
-                            <div class="standardText">Hello. I've done some things</div>
-                        </div>
-                        <div class="six columns">
-                            <div class="introText">Picture</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Contact -->
-            <div class="eleven columns offset-by-one fullheight">
-                
-                <div class="container">
-                    <div class="row">
-                        <div class="six columns">
-                            <div class="introText">04. Contact</div>
-                            <div class="standardText">Hello. I've done some things</div>
-                        </div>
-                        <div class="six columns">
-                            <div class="introText">Picture</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+          </div>
+      </div>
+  </div>
 
 </body>
 </html>
