@@ -1,45 +1,33 @@
+/* Palette */ 
+:root {
+    --background: #0b4967;
+    --text-hightlight: #66FFF3;
+    --text-contrast: #FF6673;
+    --text-main: #AC91B1;
+    --text-sub: #95739C;
+}
 
+/* Display Elements */
+body { background-color: var(--background) }
+.introText { color: var(--text-hightlight); font-size: 16px;}
+.heroText { color: var(--text-contrast); font-size: 80px; font-weight: bold;}
+.heroSubText { color: var(--text-main); font-size: 80px; font-family: bold;}
+.standardText { color: var(--text-sub); font-size: 16px;}
+.ctaButton { color: var(--text-main); background-color: var(--text-contrast); }
+/* Layout */
+.right { text-align: right;}
+.padded { margin: 1em; }
 .fullheight { height: 100vh }
-/* .nav {background-color: red;} */
-.bgImage {
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top center;
-}
-.contents {
-    background-image: linear-gradient(#dbf7ccba, #d399f9cc), url('../images/mattstartin_small.jpeg');
-}
-.about {
-    background-image: linear-gradient(#d399f9cc, #f36f8bcc), url('../images/slipway.jpeg');
-}
 
-.details { height: 10vh;}
-.detailsContents { text-align: right; padding-right:5%}
-
+/* Navigation */
+.logoContainer { height: 10vh;}
+.logo { text-align: right; padding-right:5%}
 .navigation { height: 90vh; margin-top: 40vh;}
 .navButton { width: 90%; padding:5%; vertical-align: middle; text-align: center; font-size: 2em;}
-.navLink { text-decoration: none; vertical-align: middle; color: black}
+.navLink { text-decoration: none; }
+.navItem { display: inline; margin-right:1em; }
+.navNumber { display: inline;  }
+.sidenav { position: fixed; z-index: 1;  top: 0; left: 0; overflow-x: hidden; }
 
-.landingContents { margin: 25% 5%; }
-
-
-.sidenav {
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    overflow-x: hidden; /* Disable horizontal scroll */    
-}
-
-
-
-/* icons */
-.icon {    width: 20px;    height: 20px;; vertical-align: middle;  }
-
-body { background-color: #0b4967;}
+/* Landing Page */
 .containerContents { min-height:50vh; margin-top:15vh;}
-.introText { color: #66FFF3; font-size: 16px;}
-.heroText { color: #FF6673; font-size: 80px; font-weight: bold;}
-.heroSubText { color: #AC91B1; font-size: 80px; font-family: bold;}
-.standardText { color: #95739C; font-size: 16px;}
-.navItem { display: inline; margin-left:16px; margin-top:4px}
