@@ -13,7 +13,7 @@
 body { background-color: var(--background) }
 .introText { color: var(--text-highlight); font-size: 16px;}
 .heroText { color: var(--text-contrast); font-size: 80px; font-weight: bold;}
-.heroSubText { color: var(--text-main); font-size: 80px; font-family: bold; line-height:1;}
+.heroSubText { color: var(--text-main); font-size: 80px; font-weight: bold; line-height:1;}
 .standardText { color: var(--text-sub); font-size: 16px;}
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
 
