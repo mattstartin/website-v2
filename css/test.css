@@ -1,21 +1,21 @@
 /* Palette */ 
 :root {
     --background: #035e7b;
-    --text-hightlight: #66FFF3;
+    --text-highlight: #66FFF3;
     --text-contrast: #FF8C66;
     --text-main: #8CD9D2;
     --text-sub: #9DC8C5;
 }
 .colourContrast { color: var(--text-contrast) }
-.colourHighlight { color: var(--text-hightlight) }
+.colourHighlight { color: var(--text-highlight) }
 
 /* Display Elements */
 body { background-color: var(--background) }
-.introText { color: var(--text-hightlight); font-size: 16px;}
+.introText { color: var(--text-highlight); font-size: 16px;}
 .heroText { color: var(--text-contrast); font-size: 80px; font-weight: bold;}
 .heroSubText { color: var(--text-main); font-size: 80px; font-family: bold; line-height:1;}
 .standardText { color: var(--text-sub); font-size: 16px;}
-.ctaButton { border: solid 1px var(--text-hightlight); color: var(--text-hightlight); font-weight: bold  }
+.ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
 
 /* Layout */
 .plainText { text-decoration: none; }
