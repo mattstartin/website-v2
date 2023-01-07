@@ -5,16 +5,25 @@
     --text-contrast: #FF8C66;
     --text-main: #8CD9D2;
     --text-sub: #9DC8C5;
+
+    --text-xl: 80px;
+    --text-l: 48px;
+    --text-m: 24px;
+    --text-s: 16px;
 }
 .colourContrast { color: var(--text-contrast) }
 .colourHighlight { color: var(--text-highlight) }
+.colourMain { color: var(--text-main) }
+.colourSub { color: var(--text-sub) }
 
-/* Display Elements */
 body { background-color: var(--background) }
-.introText { color: var(--text-highlight); font-size: 16px;}
-.heroText { color: var(--text-contrast); font-size: 80px; font-weight: bold;}
-.heroSubText { color: var(--text-main); font-size: 80px; font-weight: bold; line-height:1;}
-.standardText { color: var(--text-sub); font-size: 16px;}
+
+/* Text Elements */
+.textXl { font-size: var(--text-xl)}
+.textL { font-size: var(--text-l)}
+.textM { font-size: var(--text-m)}
+.textS { font-size: var(--text-s)}
+
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
 
 /* Layout */
