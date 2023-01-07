@@ -6,6 +6,8 @@
     --text-main: #8CD9D2;
     --text-sub: #9DC8C5;
 }
+.colourContrast { color: var(--text-contrast) }
+.colourHighlight { color: var(--text-hightlight) }
 
 /* Display Elements */
 body { background-color: var(--background) }
@@ -16,9 +18,11 @@ body { background-color: var(--background) }
 .ctaButton { border: solid 1px var(--text-hightlight); color: var(--text-hightlight); font-weight: bold  }
 
 /* Layout */
-.navLink { text-decoration: none; }
+.plainText { text-decoration: none; }
 .right { text-align: right;}
 .padded { margin: 1em; }
+.inline { display: inline }
+.bold { font-weight: bold; }
 .fullheight { height: 100vh }
 
 /* Top Navigation */
