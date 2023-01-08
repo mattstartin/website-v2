@@ -24,8 +24,10 @@ body { background-color: var(--background) }
 .textM { font-size: var(--text-m)}
 .textS { font-size: var(--text-s)}
 
+/* Elements */
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
-
+.photoContainer { margin-top: 10vh }
+.photo { width: 100%; border: solid 1px var(--text-contrast); padding: 1em;}
 /* Layout */
 .plainText { text-decoration: none; }
 .right { text-align: right;}
@@ -33,9 +35,8 @@ body { background-color: var(--background) }
 .inline { display: inline }
 .bold { font-weight: bold; }
 .fullheight { height: 100vh }
-
+.topspaced {margin-top: var(--text-s); }
 /* Top Navigation */
-.navNumber { display: inline;  }
 .navItem { display: inline; margin-right:1em; }
 
 /* Left Nav */
@@ -48,3 +49,14 @@ body { background-color: var(--background) }
 
 /* Landing Page */
 .containerContents { min-height:50vh; margin-top:15vh;}
+
+/* Page Headers */
+h2 span { padding-right: 10px; }
+h2::after {
+    content: '';
+    display: block;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: var(--text-highlight);
+  }
+
