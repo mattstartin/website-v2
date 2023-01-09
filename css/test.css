@@ -1,6 +1,8 @@
 /* Palette */ 
 :root {
     --background: #035e7b;
+    --background-tint: #047297;
+    --background-tint2: #0586B2;
     --text-highlight: #66FFF3;
     --text-contrast: #FF8C66;
     --text-main: #8CD9D2;
@@ -65,3 +67,9 @@ h2::after {
     background-color: var(--text-highlight);
   }
 
+/* Experience */
+.companyOn { border-left: solid 2px var(--text-contrast); padding: 1em; background-color: var(--background-tint);}
+.companyOff { padding: 1em; background-color: var(--background-tint2);}
+.companyDetails { padding: 1em; background-color: var(--background-tint);color: var(--text-sub);min-height: 80vh; }
+.companyName { color: var(--text-contrast); font-weight: bold;}
+.companyDates { color: var(--text-sub); }
