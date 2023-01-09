@@ -26,8 +26,10 @@ body { background-color: var(--background) }
 
 /* Elements */
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
+.ctaButton:hover { background-color: var(--text-highlight); border: solid 1px var(--text-contrast); color: var(--text-sub);}
 .photoContainer { margin-top: 10vh }
 .photo { width: 100%; border: solid 1px var(--text-contrast); padding: 1em;}
+
 /* Layout */
 .plainText { text-decoration: none; }
 .right { text-align: right;}
@@ -36,12 +38,15 @@ body { background-color: var(--background) }
 .bold { font-weight: bold; }
 .fullheight { height: 100vh }
 .topspaced {margin-top: var(--text-s); }
+
 /* Top Navigation */
 .navItem { display: inline; margin-right:1em; }
+.navItem:hover { color: var(--text-highlight) }
 
 /* Left Nav */
 .sidenav { position: fixed; z-index: 1;  top: 0; left: 0; overflow-x: hidden; }
 .sideNavLink { text-decoration: none; color: var(--text-sub);} 
+.sideNavLink:hover { color: var(--text-highlight);} 
 .logoContainer { height: 10vh;}
 .logo { text-align: right; padding-right:5%}
 .navigation { height: 90vh; margin-top: 40vh;}
