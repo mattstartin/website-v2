@@ -73,3 +73,6 @@ h2::after {
 .companyDetails { padding: 1em; background-color: var(--background-tint);color: var(--text-sub);min-height: 80vh; }
 .companyName { color: var(--text-contrast); font-weight: bold;}
 .companyDates { color: var(--text-sub); }
+
+/*Contact*/
+.contactButton {text-align: center; margin-top: 2em;}
