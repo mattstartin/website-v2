@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/skeleton.css">
 <link rel="stylesheet" href="css/test.css">
 <link rel="icon" type="image/png" href="images/favicon.png">
-<script type="text/javascript" src="./js/textrotate.js"></script>
+<script type="text/javascript" src="./js/index.js"></script>
 
 <body>
     <div class="container">
@@ -126,18 +126,21 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="two columns">
-                                        <div class="companyOn">
+                                        <div id="osName" class="companyName companyOn" onclick="companyClick('os')">
                                             <div class="companyName">Oneserve</div>
                                             <div class="companyDates">2019 - today</div>
                                         </div>
-                                        <div class="companyOff">
+                                        <div id="tpName" class="companyName companyOff" onclick="companyClick('tp')">
                                             <div class="companyName">Travis Perkins</div>
                                             <div class="companyDates">2010 - 2019</div>
                                         </div>
                                     </div>
                                     <div class="nine columns">
-                                        <div class="companyDetails">
-                                            Did some stuff
+                                        <div id="osDetails" class="companyDetails on">
+                                            Oneserve: Did some stuff
+                                        </div>
+                                        <div id="tpDetails" class="companyDetails off">
+                                            TP: Did some stuff
                                         </div>
                                     </div>
                                 </div>

@@ -40,6 +40,8 @@ body { background-color: var(--background) }
 .bold { font-weight: bold; }
 .fullheight { height: 100vh }
 .topspaced {margin-top: var(--text-s); }
+.off {display:none}
+.on {display:block}
 
 /* Top Navigation */
 .navItem { display: inline; margin-right:1em; }
@@ -68,6 +70,7 @@ h2::after {
   }
 
 /* Experience */
+.companyName { cursor: pointer; }
 .companyOn { border-left: solid 2px var(--text-contrast); padding: 1em; background-color: var(--background-tint);}
 .companyOff { padding: 1em; background-color: var(--background-tint2);}
 .companyDetails { padding: 1em; background-color: var(--background-tint);color: var(--text-sub);min-height: 80vh; }
