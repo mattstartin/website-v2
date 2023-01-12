@@ -77,5 +77,8 @@ h2::after {
 .companyName { color: var(--text-contrast); font-weight: bold;}
 .companyDates { color: var(--text-sub); }
 
+/* Portfolio */
+.portfolioContainer { border: solid 1px var(--text-contrast); min-height:33vh; margin:1em }
+
 /*Contact*/
 .contactButton {text-align: center; margin-top: 2em;}
