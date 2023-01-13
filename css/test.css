@@ -25,7 +25,8 @@ body { background-color: var(--background) }
 .textL { font-size: var(--text-l)}
 .textM { font-size: var(--text-m)}
 .textS { font-size: var(--text-s)}
-
+.italics { font-style: italic;}
+.bold { font-weight: bold;}
 /* Elements */
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
 .ctaButton:hover { background-color: var(--text-highlight); border: solid 1px var(--text-contrast); color: var(--text-sub);}
