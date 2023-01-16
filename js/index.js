@@ -13,3 +13,14 @@ function companyClick(name) {
     document.getElementById(name+'Name').classList.remove('companyOff')
 
 }
+
+
+function themeClick() {
+    var bodyStyles = document.body.style;
+    bodyStyles.setProperty('--background', '#'+Math.floor(Math.random()*16777215).toString(16));
+    bodyStyles.setProperty('--background-tint2', '#'+Math.floor(Math.random()*16777215).toString(16));
+    bodyStyles.setProperty('--text-highlight', '#'+Math.floor(Math.random()*16777215).toString(16));
+    bodyStyles.setProperty('--text-contrast', '#'+Math.floor(Math.random()*16777215).toString(16));
+    bodyStyles.setProperty('--text-main', '#'+Math.floor(Math.random()*16777215).toString(16));
+    bodyStyles.setProperty('--text-sub', '#'+Math.floor(Math.random()*16777215).toString(16));
+}

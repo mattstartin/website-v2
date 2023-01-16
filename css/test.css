@@ -13,6 +13,7 @@
     --text-m: 24px;
     --text-s: 16px;
 }
+
 .colourContrast { color: var(--text-contrast) }
 .colourHighlight { color: var(--text-highlight) }
 .colourMain { color: var(--text-main) }
@@ -35,6 +36,7 @@ body { background-color: var(--background) }
 
 /* Layout */
 .plainText { text-decoration: none; }
+.floatleft { float: left;}
 .right { text-align: right;}
 .padded { margin: 1em; }
 .inline { display: inline }
