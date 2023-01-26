@@ -17,10 +17,25 @@ function companyClick(name) {
 
 function themeClick() {
     var bodyStyles = document.body.style;
-    bodyStyles.setProperty('--background', '#'+Math.floor(Math.random()*16777215).toString(16));
-    bodyStyles.setProperty('--background-tint2', '#'+Math.floor(Math.random()*16777215).toString(16));
-    bodyStyles.setProperty('--text-highlight', '#'+Math.floor(Math.random()*16777215).toString(16));
-    bodyStyles.setProperty('--text-contrast', '#'+Math.floor(Math.random()*16777215).toString(16));
-    bodyStyles.setProperty('--text-main', '#'+Math.floor(Math.random()*16777215).toString(16));
-    bodyStyles.setProperty('--text-sub', '#'+Math.floor(Math.random()*16777215).toString(16));
+    var bgColour = Math.floor(Math.random()*16777215).toString(16);
+    var tintColour = Math.floor(Math.random()*16777215).toString(16);
+    var hlColour = Math.floor(Math.random()*16777215).toString(16);
+    var contColour = Math.floor(Math.random()*16777215).toString(16);
+    var mainColour = Math.floor(Math.random()*16777215).toString(16);
+    var subColour = Math.floor(Math.random()*16777215).toString(16);
+
+    bodyStyles.setProperty('--background', '#'+bgColour);
+    bodyStyles.setProperty('--background-tint2', '#'+tintColour);
+    bodyStyles.setProperty('--text-highlight', '#'+hlColour);
+    bodyStyles.setProperty('--text-contrast', '#'+contColour);
+    bodyStyles.setProperty('--text-main', '#'+mainColour);
+    bodyStyles.setProperty('--text-sub', '#'+subColour);
+
+    document.getElementById('schema-bg').setAttribute('style', 'background-color: #' + bgColour);
+    document.getElementById('schema-tint').setAttribute('style', 'background-color: #' + tintColour);
+    document.getElementById('schema-hl').setAttribute('style', 'background-color: #' + hlColour);
+    document.getElementById('schema-cont').setAttribute('style', 'background-color: #' + contColour);
+    document.getElementById('schema-main').setAttribute('style', 'background-color: #' + mainColour);
+    document.getElementById('schema-sub').setAttribute('style', 'background-color: #' + subColour);
+
 }

@@ -14,10 +14,18 @@
     --text-s: 16px;
 }
 
+.colourBg { color: var(--background) }
+.colourTint { color: var(--background-tint2) }
 .colourContrast { color: var(--text-contrast) }
 .colourHighlight { color: var(--text-highlight) }
 .colourMain { color: var(--text-main) }
 .colourSub { color: var(--text-sub) }
+.bgBg { background-color: var(--background) }
+.bgTint { background-color: var(--background-tint2) }
+.bgContrast { background-color: var(--text-contrast) }
+.bgHl { background-color: var(--text-highlight) }
+.bgMain { background-color: var(--text-main) }
+.bgSub { background-color: var(--text-sub) }
 
 body { background-color: var(--background) }
 
@@ -28,11 +36,13 @@ body { background-color: var(--background) }
 .textS { font-size: var(--text-s)}
 .italics { font-style: italic;}
 .bold { font-weight: bold;}
+
 /* Elements */
 .ctaButton { border: solid 1px var(--text-highlight); color: var(--text-highlight); font-weight: bold  }
 .ctaButton:hover { background-color: var(--text-highlight); border: solid 1px var(--text-contrast); color: var(--text-sub);}
 .photoContainer { margin-top: 10vh }
 .photo { width: 100%; border: solid 1px var(--text-contrast); padding: 1em;}
+.colourBox { height: 38px; width: 38px; border: solid 1px white;}
 
 /* Layout */
 .plainText { text-decoration: none; }
