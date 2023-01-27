@@ -42,7 +42,7 @@ body { background-color: var(--background) }
 .ctaButton:hover { background-color: var(--text-highlight); border: solid 1px var(--text-contrast); color: var(--text-sub);}
 .photoContainer { margin-top: 10vh }
 .photo { width: 100%; border: solid 1px var(--text-contrast); padding: 1em;}
-.colourBox { height: 38px; width: 38px; border: solid 1px white;}
+.colourBox { height: 44px; width: 44px; border: solid 1px white;}
 
 /* Layout */
 .plainText { text-decoration: none; }
