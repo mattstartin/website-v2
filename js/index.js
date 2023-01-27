@@ -31,7 +31,7 @@ function themeClick() {
     }
     
     if(document.getElementById('schema-tint').dataset.locked != 'true') {
-        bodyStyles.setProperty('--background-tint2', '#'+tintColour);
+        bodyStyles.setProperty('--background-tint', '#'+tintColour);
         document.getElementById('schema-tint').setAttribute('style', 'background-color: #' + tintColour);
     }
     
