@@ -42,6 +42,7 @@ function updateColour(elementId, property, colour) {
     var bodyStyles = document.body.style;
     const pageElement = document.getElementById(elementId);
     if(pageElement.dataset.locked != 'true') {
+        pageElement.title='#'+colour
         bodyStyles.setProperty(property, '#'+colour);
         pageElement.setAttribute('style', 'background-color: #' + colour);
     }
