@@ -14,46 +14,13 @@ function companyClick(name) {
 
 }
 
-
 function themeClick() {
-    var bodyStyles = document.body.style;
-    var bgColour = Math.floor(Math.random()*16777215).toString(16);
-    var tintColour = Math.floor(Math.random()*16777215).toString(16);
-    var hlColour = Math.floor(Math.random()*16777215).toString(16);
-    var contColour = Math.floor(Math.random()*16777215).toString(16);
-    var mainColour = Math.floor(Math.random()*16777215).toString(16);
-    var subColour = Math.floor(Math.random()*16777215).toString(16);
-
-
-    if(document.getElementById('schema-bg').dataset.locked != 'true') {
-        bodyStyles.setProperty('--background', '#'+bgColour);
-        document.getElementById('schema-bg').setAttribute('style', 'background-color: #' + bgColour);
-    }
-    
-    if(document.getElementById('schema-tint').dataset.locked != 'true') {
-        bodyStyles.setProperty('--background-tint', '#'+tintColour);
-        document.getElementById('schema-tint').setAttribute('style', 'background-color: #' + tintColour);
-    }
-    
-    if(document.getElementById('schema-hl').dataset.locked != 'true') {
-        bodyStyles.setProperty('--text-highlight', '#'+hlColour);
-        document.getElementById('schema-hl').setAttribute('style', 'background-color: #' + hlColour);
-    }
-
-    if(document.getElementById('schema-cont').dataset.locked != 'true') {
-        bodyStyles.setProperty('--text-contrast', '#'+contColour);
-        document.getElementById('schema-cont').setAttribute('style', 'background-color: #' + contColour);
-    }
-
-    if(document.getElementById('schema-main').dataset.locked != 'true') {
-        bodyStyles.setProperty('--text-main', '#'+mainColour);
-        document.getElementById('schema-main').setAttribute('style', 'background-color: #' + mainColour);
-    }
-
-    if(document.getElementById('schema-sub').dataset.locked != 'true') {
-        bodyStyles.setProperty('--text-sub', '#'+subColour);
-        document.getElementById('schema-sub').setAttribute('style', 'background-color: #' + subColour);
-    }
+    updateColour('schema-bg', '--background', randomHex());
+    updateColour('schema-tint', '--background-tint', randomHex());
+    updateColour('schema-hl', '--text-highlight', randomHex());
+    updateColour('schema-cont', '--text-contrast', randomHex());
+    updateColour('schema-main', '--text-main', randomHex());
+    updateColour('schema-sub', '--text-sub', randomHex());
 }
 
 function paletteClick(el) {
@@ -67,5 +34,15 @@ function paletteClick(el) {
         element.dataset.locked = 'true'
         element.children[0].classList.remove('fa-lock-open')
         element.children[0].classList.add('fa-lock')
+    }
+}
+function randomHex() { return Math.floor(Math.random()*16777215).toString(16) }
+
+function updateColour(elementId, property, colour) {
+    var bodyStyles = document.body.style;
+    const pageElement = document.getElementById(elementId);
+    if(pageElement.dataset.locked != 'true') {
+        bodyStyles.setProperty(property, '#'+colour);
+        pageElement.setAttribute('style', 'background-color: #' + colour);
     }
 }
